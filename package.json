@@ -2,9 +2,12 @@
   "name": "assignment1",
   "version": "1.0.0",
   "description": "This is an Assignment",
-  "main": "aboutus.html",
+  "main": "index.html",
   "dependencies": {
-    "lite-server": "^2.4.0"
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "lite-server": "^2.4.0",
+    "popper.js": "^1.12.9"
   },
   "devDependencies": {
     "lite-server": "^2.4.0"
