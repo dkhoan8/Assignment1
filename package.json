@@ -1,0 +1,23 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "This is an Assignment",
+  "main": "aboutus.html",
+  "dependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "\"Khoa Nguyen\"",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkhoan8/Assignment1"
+  }
+}
