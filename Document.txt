@@ -1,0 +1,12 @@
+Portfolio website.
+
+
+I. Introduction:
+A website that shows who I am: my expertise, persona, and my achievements.
+This website can speak more about the person that employers are hiring other than resume and cover letter.
+II. Features:
+A small paragraph about why I follow this career.
+Popup images about projects and classes that show my achievements and experience.
+Graph that shows my academic progress.
+Links to Resume and Cover letter.
+Links to Contact information.
