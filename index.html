@@ -28,7 +28,7 @@
                 </ul>
                 <span class ="navbar-text">
                     <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login
+                        <span class="fa fa-sign-in"></span><button type ="button" class ="btn btn-link text-white">Login</button>
                     </a>
                 </span>
             </div>
@@ -65,8 +65,8 @@
                             </div>
                         </div>
                         <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
                         </div>
                     </form>
                 </div>
@@ -86,11 +86,96 @@
                 </div>
                 <div class="col-12 col-sm-3 justify-content-center align-items-center d-flex">
                     <a role ="button" class ="btn btn-block nav-link btn-warning" 
-                    data-toggle="tooltip" data-html="true" title ="Or Call us 
-                    At <br><strong>+852 12345678</strong>" 
-                    data-placement="bottom" href ="#Reserve">
+                    data-toggle="modal" data-html="true" title ="" 
+                    data-placement="bottom" data-target="#ReserveModal">
                         Reserve Table
                     </a>
+                </div>
+            </div>
+        </div>
+        <div id="ReserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reserve Table</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!--CheckBoxes-->
+                            <div class ="form-row">
+                                <div class = "form-group col-sm-3">
+                                    <label for="DateAndTime" class="col-form-label">Number Of Guests</label>
+                                </div>
+                                <div class="form-check col-1">
+                                    <input type ="radio" class="form-check-input" name="approve" id="approve1" value ="">
+                                    <label class ="form-check-lable" for="approve1">
+                                        <strong>1</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check col-1">
+                                    <input type ="radio" class="form-check-input" name="approve" id="approve2" value ="">
+                                    <label class ="form-check-lable" for="approve2">
+                                        <strong>2</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check col-1">
+                                    <input type ="radio" class="form-check-input" name="approve" id="approve3" value ="">
+                                    <label class ="form-check-lable" for="approve3">
+                                        <strong>3</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check col-1">
+                                    <input type ="radio" class="form-check-input" name="approve" id="approve4" value ="">
+                                    <label class ="form-check-lable" for="approve4">
+                                        <strong>4</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check col-1">
+                                    <input type ="radio" class="form-check-input" name="approve" id="approve5" value ="">
+                                    <label class ="form-check-lable" for="approve5">
+                                        <strong>5</strong>
+                                    </label>
+                                </div>
+                                <div class="form-check col-1">
+                                    <input type ="radio" class="form-check-input" name="approve" id="approve6" value ="">
+                                    <label class ="form-check-lable" for="approve6">
+                                        <strong>6</strong>
+                                    </label>
+                                </div>
+                            </div>
+                            <!--Smoke or NonSmoke-->
+                            <div class ="form-row">
+                                <div class ="form-group col-sm-3">
+                                    <label class ="col-form-label" for "">Section</label>
+                                </div>
+                                <div class ="form-group col-sm">
+                                    <button type="button" class="btn btn-danger btn-sm">Smoking</button>
+                                    <button type="button" class="btn btn-success btn-sm">Non-Smoking</button>
+                                </div>
+                            </div>
+                            <!--Date And Time-->
+                            <div class ="form-row">
+                                <div class = "form-group col-sm-3">
+                                    <label class ="col-form-label" for = "Email">Data and Time</label>                                  
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <input type ="email" class ="form-control form-control-sm mr-1" 
+                                    id ="Email" placeholder="Enter mail">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <input type="password" class="form-control form-control-sm mr-1" 
+                                    id="Pass" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm offset-3" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm">Reserve</button>        
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,10 +389,16 @@
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
      <script>
-         $(document).ready(function(){
-             $('[data-toggle="tooltip"]').tooltip();
-         }
-         );
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        }
+        );
+
+        $(document).ready(function() {
+            $('.carousel').carousel({
+            interval: 5000
+            })
+        });
      </script>
 </body>
 
