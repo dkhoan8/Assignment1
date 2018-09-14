@@ -13,12 +13,11 @@
   margin: 0px auto;
   padding: 20px 0px; }
 
-.jumbotron,#jumbotron-index{
+.jumbotron{
   margin: 0px auto;
   padding: 70px 30px;
   background: #9575CD;
-  color: floralwhite; 
-}
+  color: floralwhite; }
 
 address {
   font-size: 80%;
@@ -52,16 +51,3 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px; }
-
-.modal-header {
-  background: #512DA8;
-  color: floralwhite; }
-  .modal-header .close {
-    color: #9575CD; }
-
-.modal-body {
-  background: #D1C4E9; }
-
-.modal-content{
-  background-color: black;
-}

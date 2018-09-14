@@ -1,0 +1,8 @@
+Reserve:
+data-toggle="modal" data-html="true" title ="" 
+data-placement="bottom" 
+data-target="#ReserveModal"
+
+
+Login:
+data-toggle="modal" data-target="#loginModal"
