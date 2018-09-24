@@ -18,12 +18,12 @@
     "parallelshell": "^3.0.2"
   },
   "scripts": {
-    "start": "npm run watch:all",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "watch:scss":"onchange \"css/*.scss\" -- npm run scss",
-    "watch:all":"parallelshell \"npm run watch:scss\" \"npm run lite\""
+    "watch:all":"npm run lite"
   },
   "author": "\"Khoa Nguyen\"",
   "license": "ISC",
